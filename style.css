@@ -9,14 +9,16 @@ Body {
 
 .spinner {
   position: fixed;
+  opacity: 0;
   height: 100%;
   width: 100%;
   top: 0;
-  z-index: 100;
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(245, 245, 245, 0.637);
+  transition: opacity 1s 2s, visibility 1s 2s;
 }
 
 .spinner > div {
@@ -24,9 +26,9 @@ Body {
   height: 100px;
   background-color: #99e2d0;
   border-radius: 100%;
-  display: inline-block;
-  -webkit-animation: bouncedelay 1.5s 5 ease-in-out both;
-  animation: bouncedelay 1.5s 5 ease-in-out both;
+
+  -webkit-animation: bouncedelay 1.5s 2 ease-in-out both;
+  animation: bouncedelay 1.5s 2 ease-in-out both;
 }
 
 .spinner .bounce1 {
@@ -41,6 +43,14 @@ Body {
   background-color: #ff79da;
 }
 
+@keyframes Hidden {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
 @-webkit-keyframes bouncedelay {
   0%,
   80%,
