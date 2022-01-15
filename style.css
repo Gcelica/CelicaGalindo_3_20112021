@@ -9,18 +9,27 @@ Body {
 
 .spinner {
   position: fixed;
-  opacity: 0;
+  z-index: 99;
+
   height: 100%;
   width: 100%;
   top: 0;
-  visibility: hidden;
+
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(245, 245, 245, 0.637);
-  transition: opacity 1s 2s, visibility 1s 2s;
+  animation: fadeout 0.2s 3s forwards;
 }
-
+@keyframes fadeout {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
 .spinner > div {
   width: 100px;
   height: 100px;
@@ -43,14 +52,6 @@ Body {
   background-color: #ff79da;
 }
 
-@keyframes Hidden {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: hidden;
-  }
-}
 @-webkit-keyframes bouncedelay {
   0%,
   80%,
