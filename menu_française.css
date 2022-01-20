@@ -140,6 +140,7 @@ h1 {
 }
 .menuDetails {
   font-weight: lighter;
+  text-overflow: ellipsis;
 }
 .backGroundWhite {
   background-color: white;
@@ -155,6 +156,8 @@ h1 {
 .sideDish {
   display: flex;
   justify-content: space-between;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 /*.priceDetails {
   margin-left: 55%;
@@ -168,6 +171,7 @@ h1 {
   color: white;
   background-color: #99e2d0;
   margin-right: -105px;
+  margin-top: -32px;
   cursor: pointer;
 }
 
