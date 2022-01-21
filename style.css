@@ -327,7 +327,7 @@ footer a:hover {
     justify-content: space-evenly;
 }
 .sizeTitle:hover {
-color: blue;
+color: #e06edb;
 transform:scale(1.1);
 }
 
@@ -335,6 +335,10 @@ transform:scale(1.1);
     margin-left: 5%;
     display: flex;
     justify-content: center;
+  }
+  .fonctTitle:hover {
+    color: #e06edb;
+    transform:scale(1.1);
   }
   .itemsNumbers {
     background: #9356dc;
@@ -349,20 +353,7 @@ transform:scale(1.1);
     right: 25px;
   }
 
-  .cardRestaurants {
-    background-color: white;
-    height: auto;
-    width: 20%;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px 0px #c7c7c771;
-    margin: 10px;
-  }
-  .imgRestaurants {
-    object-fit: cover;
-    width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
-  }
+  
   .fPosition{
     display: flex;
     flex-direction: row;
@@ -378,18 +369,7 @@ transform:scale(1.1);
      font-size: 15px; 
     margin: 0px;
 }
-.badgeNew {
-  background-color: #99e2d0;
-  color: #1b6150;
-  width: 80px;
-  height: 54px;
-  text-align: center;
-  margin-top: -69px;
-  border-radius: 2px;
-  position: relative;
-  right: -102px;
-  top: 63px;
-}
+
 }
 /*.flexColumnCenter/position {
   display: flex;

@@ -140,6 +140,7 @@ h1 {
 }
 .menuDetails {
   font-weight: lighter;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .backGroundWhite {
