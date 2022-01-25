@@ -68,36 +68,36 @@ h1 {
 /*Animation coeur*/
 
 /*.iconeHeart{
-    background-color:linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-    opacity: 0;
-  transition: opacity 2s ;
-  cursor: pointer;
-  }
-  .iconeHeart:hover{
-    display: block;
-    
-    opacity: 1;
-  }
-  .heart{
+      background-color:linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+      opacity: 0;
+    transition: opacity 2s ;
     cursor: pointer;
+    }
+    .iconeHeart:hover{
+      display: block;
+      
+      opacity: 1;
+    }
+    .heart{
+      cursor: pointer;
+      
+    }
+    .heart:hover{
+      display:none;
+    }
     
-  }
-  .heart:hover{
-    display:none;
-  }
-  
-  
-  /*.iconeHeart{
-    background: linear-gradient(330deg, #9356dc 39%, #ff79da 87%);
-    color:linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-    opacity: 0;
-  transition: opacity 0s ease-out 5s;
-  }
-  .iconHeart:hover{
-    opacity: 1;
-    cursor: pointer;
-  }
-  */
+    
+    /*.iconeHeart{
+      background: linear-gradient(330deg, #9356dc 39%, #ff79da 87%);
+      color:linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+      opacity: 0;
+    transition: opacity 0s ease-out 5s;
+    }
+    .iconHeart:hover{
+      opacity: 1;
+      cursor: pointer;
+    }
+    */
 .iconeHeart {
   position: relative;
   width: 20px;
@@ -115,13 +115,16 @@ h1 {
   opacity: 0.7;
 }
 .heartFull {
-  opacity: 0;
-  color: #9356dc;
-  transition: opacity 0s ease-out 1s;
+  transform: scale(0);
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.heartFull:hover {
-  opacity: 1;
+.iconeHeart:hover .heartFull {
+  transform: scale(1);
+  transition: transform 1s ease-out 1s;
 }
 /*image menu*/
 
@@ -139,9 +142,9 @@ h1 {
   margin-top: -60px;
 }
 .menuDetails {
-  font-weight: lighter;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .backGroundWhite {
   background-color: white;
@@ -156,38 +159,45 @@ h1 {
 }
 .sideDish {
   display: flex;
-  justify-content: space-between;
+  
   text-overflow: ellipsis;
   white-space: nowrap;
+  justify-content: space-between;
 }
-/*.priceDetails {
-  margin-left: 55%;
-}*/
+.price {
+    padding-left:130px;
+}
+
 .iconCheck {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 95px;
-  height: 70px;
+  width: 111px;
+  height: 72px;
   color: white;
   background-color: #99e2d0;
-  margin-right: -105px;
+  margin-right: -122px;
   margin-top: -32px;
   cursor: pointer;
+  border-radius: 0 15px 15px 0;
 }
 
-/*@keyframes rotateCheck {
-  0% {
-    transform: rotate(0);
+@keyframes rotateCheck {
+    0% {
+      transform: rotate(0);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
   }
+  .backGroundWhite:hover .fa-check-circle{
+    animation : rotateCheck 1s ease-in-out  reverse forwards;
 
-  100% {
-    transform: rotate(360deg);
   }
-}*/
 @keyframes glissement {
   0% {
-    margin-right: -70px;
+    margin-right: -122px;
   }
   100% {
     margin-right: 0px;
@@ -195,7 +205,7 @@ h1 {
 }
 
 .backGroundWhite:hover .iconCheck {
-  animation: glissement 1s ease-in-out;
+  animation: glissement 1s ease forwards;
 }
 /*boutton menu*/
 .menuBtn {
@@ -251,10 +261,12 @@ h1 {
 }
 @keyframes appear {
   0% {
-    transform: scale(0);
+    opacity: 0;
+    transform: translateY(20px);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 /*entree*/
