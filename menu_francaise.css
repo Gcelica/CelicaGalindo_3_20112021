@@ -9,7 +9,6 @@ Body {
 h1 {
   font-family: "Shrikhand", cursive;
 }
-
 /*general*/
 
 .flexCenter {
@@ -48,7 +47,6 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
 }
-
 /*header*/
 
 .headDetails {
@@ -281,7 +279,6 @@ footer a {
 footer a:hover {
   color: #e06edb;
 }
-
 /* Responsive*/
 
 @media screen and (min-width: 765px) {
