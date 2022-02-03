@@ -67,37 +67,6 @@ h1 {
 }
 /*Animation coeur*/
 
-/*.iconeHeart{
-      background-color:linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-      opacity: 0;
-    transition: opacity 2s ;
-    cursor: pointer;
-    }
-    .iconeHeart:hover{
-      display: block;
-      
-      opacity: 1;
-    }
-    .heart{
-      cursor: pointer;
-      
-    }
-    .heart:hover{
-      display:none;
-    }
-    
-    
-    /*.iconeHeart{
-      background: linear-gradient(330deg, #9356dc 39%, #ff79da 87%);
-      color:linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
-      opacity: 0;
-    transition: opacity 0s ease-out 5s;
-    }
-    .iconHeart:hover{
-      opacity: 1;
-      cursor: pointer;
-    }
-    */
 .iconeHeart {
   position: relative;
   width: 20px;
@@ -142,7 +111,7 @@ h1 {
   margin-top: -60px;
 }
 .menuDetails {
-  width: 55%;
+  width: 50%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -160,7 +129,6 @@ h1 {
 }
 .sideDish {
   display: flex;
-
   text-overflow: ellipsis;
   white-space: nowrap;
   justify-content: space-between;
@@ -336,10 +304,10 @@ footer a:hover {
   .backGroundWhite {
     width: 450px;
   }
-  .menuDetails{
+  .menuDetails {
     font-size: small;
   }
-  .sideDish{
+  .sideDish {
     font-size: small;
   }
 }
