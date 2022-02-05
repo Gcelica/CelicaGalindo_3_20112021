@@ -65,6 +65,11 @@ h1 {
 .headerArrow:hover {
   color: blueviolet;
 }
+
+/*font style restaurant*/
+.fontRestaurant {
+  font-family: "Shrikhand", cursive;
+}
 /*Animation coeur*/
 
 .iconeHeart {
@@ -104,17 +109,19 @@ h1 {
 }
 .menuBody {
   width: 100%;
-  border-radius: 65px 65px 0 0;
+  border-radius: 44px 44px 0 0;
   background: #f6f6f6;
   padding: 30px;
   position: relative;
-  margin-top: -60px;
+  margin-top: -47px;
 }
 .menuDetails {
   width: 80%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  font-weight: lighter;
+  color: #4e4e4e;
 }
 .backGroundWhite {
   background-color: white;
@@ -172,6 +179,18 @@ h1 {
 .backGroundWhite:hover .iconCheck {
   animation: glissement 1s ease forwards;
 }
+@keyframes reduce {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+    transform-origin: left;
+  }
+}
+.backGroundWhite:hover .dishTitle {
+  animation: reduce 1s ease forwards;
+}
 /*boutton menu*/
 .menuBtn {
   color: white;
@@ -180,8 +199,8 @@ h1 {
   border-radius: 30px;
   border: none;
   cursor: pointer;
-  padding: 15px 25px;
-  margin: 15px;
+  padding: 13px 5px;
+  margin: 71px;
   box-shadow: 5px 5px 5px lightgrey;
 
   transition: 1s;
@@ -238,11 +257,13 @@ h1 {
 
 .txtDeco {
   border-bottom: 4px solid #99e2d0;
-  width: 60px;
+  width: 39px;
   padding-bottom: 1px;
   margin-bottom: 12px;
   margin-top: 25px;
-  color: rgb(214, 206, 206);
+  font-weight: lighter;
+  font-size: medium;
+  color: #4e4e4e;
 }
 /*footer*/
 
