@@ -184,17 +184,18 @@ h1 {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/*@keyframes reduce {
+@keyframes reduce {
   0% {
-    transform: translate(0%);
+    width: 100%;
   }
   100% {
-    transform: translateX(-7%);
+    width: 64%;
   }
 }
 .backGroundWhite:hover .dishTitle {
   animation: reduce 1s ease forwards;
-}*/
+}
+
 /*boutton menu*/
 .menuBtn {
   color: white;

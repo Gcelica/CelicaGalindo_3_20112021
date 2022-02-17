@@ -4,8 +4,48 @@
 
 Body {
   font-family: "Roboto", sans-serif;
-  margin: 0px;
+  margin: 0;
 }
+
+/*general*/
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColumnAround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.flexColumnBetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /*Loader*/
 
 .spinner {
@@ -82,44 +122,6 @@ Body {
   }
 }
 
-/*general*/
-.flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flexAround {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.flexBetween {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.flexColumnCenter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.flexColumnAround {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.flexColumnBetween {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 /*header*/
 
 .headTitle {
@@ -187,12 +189,11 @@ Body {
 }
 
 /*Fonctionnement*/
+
 .iconeDetails {
-  color: black;
+  color: grey;
 }
-/*.iconeDetails:hover {
-  color: #9356dc;
-}*/
+
 .cardItems {
   background-color: #f6f6f6;
   width: 90%;
@@ -220,8 +221,13 @@ Body {
   left: 10px;
 }
 
+/* cards restaurants*/
+
+.sizeTitle {
+  margin-left: 4%;
+}
 .blockRestaurants {
-  padding: 30px 10px 55px 20px;
+  padding: 30px 10px 55px 10px;
   background-color: #f2f2f2;
 }
 
@@ -231,7 +237,8 @@ Body {
   width: 90%;
   border-radius: 15px;
   box-shadow: 5px 5px 5px 0 #c7c7c771;
-  margin: 10px;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 .cardDetails {
@@ -262,7 +269,7 @@ Body {
 }
 
 .txtDetails {
-  padding: 0px 15px;
+  padding: 0 15px;
   margin: 5px 0 15px 0;
 }
 .margeNone {
@@ -339,7 +346,7 @@ footer i {
 }
 /*Responsive*/
 
-@media screen and (min-width: 766px) {
+@media screen and (min-width: 765px) {
   .blockRestaurants {
     display: flex;
     flex-direction: row;
@@ -385,6 +392,7 @@ footer i {
 @media screen and (min-width: 992px) {
   .sizeTitle {
     width: 100%;
+    margin-left: 1%;
   }
   .fonctTitle {
     display: flex;
@@ -394,6 +402,7 @@ footer i {
   .fPosition {
     display: flex;
     justify-content: space-around;
+    margin-left: 1%;
   }
   .cardItems {
     width: 30%;
@@ -408,7 +417,7 @@ footer i {
     border-radius: 15px 15px 0 0;
   }
   .cardRestaurants {
-    width: 33%;
+    width: 35%;
   }
 
   .blockRestaurants {
