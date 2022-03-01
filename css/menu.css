@@ -145,7 +145,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
+  width: 80px;
   height: 80px;
   color: white;
   background-color: #99e2d0;
@@ -157,7 +157,7 @@ h1 {
 
 @keyframes rotateCheck {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 
   100% {
@@ -165,11 +165,11 @@ h1 {
   }
 }
 .backGroundWhite:hover .fa-check-circle {
-  animation: rotateCheck 1s ease-in-out reverse forwards;
+  animation: rotateCheck 0.5s ease-in-out forwards;
 }
 @keyframes glissement {
   0% {
-    margin-right: -100px;
+    margin-right: -90px;
   }
   100% {
     margin-right: -10px;
@@ -177,7 +177,7 @@ h1 {
 }
 
 .backGroundWhite:hover .iconCheck {
-  animation: glissement 1s ease forwards;
+  animation: glissement 0.5s ease forwards;
 }
 .dishTitle {
   overflow: hidden;
